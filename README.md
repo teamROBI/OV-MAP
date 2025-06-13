@@ -1,20 +1,47 @@
 # OV-MAP : Open-Vocabulary Zero-Shot 3D Instance Segmentation Map for Robots
-- Institutes: Seoul National University
+
+
+<div align="center" margin-bottom="3em">
+    <a href="https://ieeexplore.ieee.org/document/10801841" target="_blank">
+    <img src="https://img.shields.io/badge/Video--3D_LLM-ArXiv-red" alt="Paper arXiv"></a>
+</div>
+
+<div align="center" margin-bottom="3em">
+<a target="_blank" href="">Juno Kim<sup>*</sup></a>,
+<a target="_blank" href="">Yesol Park<sup>*</sup></a>,
+<a target="_blank" href="">Hye-Jung Yoon<sup>*</sup></a> and
+<a target="_blank" href="">Byoung-Tak Zhang<sup>&ddagger;</sup></a>
+
+<br>
+<strong>
+Seoul National University<br>
+</strong>
+<br>
+<p style="font-size: 12px;"><sup>*</sup>Equal contribution.
+<sup>&ddagger;</sup> Corresponding author.</p>
+</div>
   
 ![](./docs/overview.png)
 
----
 
 ## Abstract
 This paper introduces a groundbreaking approach to open-world 3D navigation for mobile robots, leveraging the integration of open-features into the 3D map to enhance capabilities in navigation. We address the challenges of creating zero-shot 3D scene mappings in open-world environments, hindered by the scarcity of extensive open-world 3D datasets and the limitations of current methodologies that result in `feature flooding'. Our novel strategy employs a per-instance feature to 3D instance mapping technique, utilizing a class-agnostic segmentation model to project 2D masks into the 3D space. This process, combined with a 3D mask voting mechanism, allows for the generation of zero-shot 3D instance segmented maps without reliance on supervised learning models, enabling more accurate and adaptable open-vocabulary 3D mapping.
 We validate our approach through extensive experiments on publicly available datasets such as ScanNet200 and Replica, demonstrating superior zero-shot performance and effectiveness in diverse environments. Additionally, we extend our evaluation to navigation tasks, showcasing significant improvements in navigation success rates through per-instance querying. Our real-world experiments further attest to the method's adaptability and robustness, proving its potential for widespread application in various environments.
 
----
 
 ## Method Overview
 ![](./docs/method.png)
 
----
+
+## News
+- [2024-12-25] Our paper is published to IEEE. [OV-MAP](https://ieeexplore.ieee.org/document/10801841/).
+- [2024-6-30] Our paper is accepted to IROS 2024.
+
+## TODO List
+
+- [x] Release the main code.
+- [x] Release the evaluation script.
+- [ ] Release the real-world test data.
 
 ## Installation
 
@@ -44,7 +71,7 @@ cd libs/pointops
 python setup.py install
 cd ..
 ```
-#### Docker & Multi GPU Arch 
+#### Multi GPU Arch 
 e.g. RTX 3090TI=8.6, RTX 8000=7.5, A100=8.0, H100=9.0   
 More available in: https://developer.nvidia.com/cuda-gpus
 ```bash
