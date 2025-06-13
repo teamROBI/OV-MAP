@@ -1,0 +1,10 @@
+colorama
+rich==13.4.2
+jupyter-server>=1.21,<3
+requests==2.28.2
+setuptools==60.2.0
+tqdm==4.65.0
+scikit-image==0.19.3
+opencv-python==4.6.0.66
+open3d==0.15.2
+imageio==2.19.3

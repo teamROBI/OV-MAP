@@ -1,0 +1,67 @@
+# input dir
+/data
+!/open_query/clip_embedding/data
+
+# output dir
+output
+open_query/clip_output
+open_query/clip_debug
+
+# submodules
+libs/detectron2
+open_query/third_party
+
+# trash files
+etc
+
+*.csv
+*.ply
+
+*.png
+*.json
+*.diff
+*.jpg
+!/projects/DensePose/doc/images/*.jpg
+!docs/*.png
+
+# compilation and distribution
+__pycache__
+_ext
+*.pyc
+*.pyd
+*.so
+*.dll
+*.egg-info/
+build/
+dist/
+wheels/
+
+# pytorch/python/numpy formats
+*.pth
+*.pkl
+*.npy
+*.ts
+model_ts*.txt
+
+# ipython/jupyter notebooks
+*.ipynb
+**/.ipynb_checkpoints/
+
+# Editor temporaries
+*.swn
+*.swo
+*.swp
+*~
+
+# editor settings
+.idea
+.vscode
+_darcs
+
+# project dirs
+/detectron2/model_zoo/configs
+/datasets/*
+!/datasets/*.*
+/projects/*/datasets
+/models
+/snippet

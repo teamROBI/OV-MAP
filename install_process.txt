@@ -1,0 +1,45 @@
+# ovmap
+conda create -n ovmap python=3.8 -y
+conda activate ovmap
+# Choose version you want here: https://pytorch.org/get-started/previous-versions/
+
+# If local cuda is not available
+conda install nvidia/label/cuda-11.3.1::cuda -y
+
+conda install pytorch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 cudatoolkit=11.3 -c pytorch -y
+conda install plyfile -c conda-forge -y
+pip install scikit-image opencv-python open3d imageio
+pip install git+https://github.com/facebookresearch/segment-anything.git 
+
+cd libs/pointops
+# usual
+python setup.py install
+# docker & multi GPU arch
+TORCH_CUDA_ARCH_LIST="ARCH LIST" python  setup.py install
+# e.g. 7.5: RTX 3000; 8.0: a100 More available in: https://developer.nvidia.com/cuda-gpus
+# RTX 3090TI=8.6, RTX 8000=7.5, A100=8.0, H100=9.0 
+TORCH_CUDA_ARCH_LIST="8.6" python  setup.py install
+cd ..
+
+git clone https://github.com/facebookresearch/detectron2.git
+python -m pip install -e detectron2
+
+cp CropFormer detectron2/projects
+cd detectron2/projects/CropFormer/entity_api/PythonAPI
+make
+cd ../..
+cd mask2former/modeling/pixel_decoder/ops
+sh make.sh
+
+# Other packages
+pip install numba==0.58.1 open_clip_torch==2.24.0 pillow==9.3.0
+pip install -U openmim
+mim install mmcv
+
+cd ../../../../../../../..
+ln -s /data/jokim/projects/OVMap/data data
+ln -s /data/jokim/projects/OVMap/output output
+ln -s /data/jokim/projects/OVMap/clip_output open_query/clip_output
+
+# Open query
+pip install git+https://github.com/openai/CLIP.git@a9b1bf5920416aaeaec965c25dd9e8f98c864f16 --no-deps

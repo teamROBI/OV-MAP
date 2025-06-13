@@ -1,0 +1,4 @@
+- data.scans_path=/home/robi/PycharmProjects/SegmentAnything3D/data/scannetv2/input/pointcept_process/val
+- data.masks.masks_path=/home/robi/PycharmProjects/SegmentAnything3D/output/scannetv2/MCh_OClo3_VX0.02_IT10/mask_array/cropformer_pc_depth
+- data.scans_2d_path=/home/robi/PycharmProjects/SegmentAnything3D/data/scannetv2/input/scannetv2_images/val
+- data.camera.intrinsic_path=intrinsics/intrinsic_color.txt

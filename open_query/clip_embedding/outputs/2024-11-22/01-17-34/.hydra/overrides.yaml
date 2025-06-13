@@ -1,0 +1,7 @@
+- data.scans_path=/home/robi/PycharmProjects/OVMap/data/scannetv2/input/pointcept_process/val
+- data.masks.masks_path=/home/robi/PycharmProjects/OVMap/output/scannetv2/OVM_OCiou3_VX0.03_IT10/mask_array/cropformer_sup_depth
+- data.scans_2d_path=/home/robi/PycharmProjects/OVMap/data/scannetv2/input/scannetv2_images/val
+- data.camera.intrinsic_path=intrinsics/intrinsic_color.txt
+- data.camera.intrinsic_resolution=[968,1296]
+- data.depths.depth_supplemented=false
+- openmask3d.vis_threshold=0.2
