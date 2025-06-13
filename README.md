@@ -3,7 +3,7 @@
 
 <div align="center" margin-bottom="3em">
     <a href="https://ieeexplore.ieee.org/document/10801841" target="_blank">
-    <img src="https://img.shields.io/badge/Video--3D_LLM-ArXiv-red" alt="Paper arXiv"></a>
+    <img src="https://img.shields.io/badge/OV--MAP-ArXiv-red" alt="Paper arXiv"></a>
 </div>
 
 <div align="center" margin-bottom="3em">
