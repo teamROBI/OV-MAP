@@ -2,7 +2,7 @@
 
 
 <div align="center" margin-bottom="3em">
-    <a href="https://ieeexplore.ieee.org/document/10801841" target="_blank">
+    <a href="https://arxiv.org/abs/2306.17817" target="_blank">
     <img src="https://img.shields.io/badge/OV--MAP-ArXiv-red" alt="Paper arXiv"></a>
 </div>
 
@@ -41,6 +41,7 @@ We validate our approach through extensive experiments on publicly available dat
 
 - [x] Release the main code.
 - [x] Release the evaluation script.
+- [ ] Code cleaning.
 - [ ] Release the real-world test data.
 
 ## Installation
