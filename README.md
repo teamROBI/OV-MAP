@@ -2,7 +2,7 @@
 
 
 <div align="center" margin-bottom="3em">
-    <a href="https://arxiv.org/abs/2306.17817" target="_blank">
+    <a href="https://arxiv.org/abs/2506.11585" target="_blank">
     <img src="https://img.shields.io/badge/OV--MAP-ArXiv-red" alt="Paper arXiv"></a>
 </div>
 
